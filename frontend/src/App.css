@@ -1,0 +1,53 @@
+/* .App {
+  display: grid;
+  height: 100vh;
+  place-items: center;
+} */
+
+.App {
+  margin: 50px 0 0 50px;
+}
+
+.label {
+  color: #393939;
+  font-family: "Work Sans", sans-serif;
+  font-weight: 500;
+}
+
+.input {
+  width: 400px;
+  height: 40px;
+  margin-top: 3px;
+  padding-left: 8px;
+  border-radius: 5px;
+  border-color: #dedede;
+  border-width: 1px;
+  font-family: "Source Sans Pro", sans-serif;
+}
+
+.error-div {
+  color: red;
+  margin-left: 10px;
+  font-family: "Source Sans Pro", sans-serif;
+}
+
+.btn {
+  margin-top: 35px;
+}
+
+.button {
+  width: 400px;
+  height: 50px;
+  /* margin-left: 10px; */
+  background-color: #ff5733;
+  color: white;
+  font-weight: bold;
+  border: 0;
+  border-radius: 5px;
+}
+
+.btn :hover {
+  background-color: #ff3c12;
+  color: white;
+  cursor: pointer;
+}
