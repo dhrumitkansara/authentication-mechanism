@@ -37,6 +37,7 @@ function App() {
 
   return (
     <div className="App">
+      <>
       <h1> Please enter your login access code here! </h1>
       {/* formik form that renders on front end */}
       <form onSubmit={formik.handleSubmit}>
@@ -62,6 +63,7 @@ function App() {
           </button>
         </div>
       </form>
+      </>
     </div>
   );
 }
