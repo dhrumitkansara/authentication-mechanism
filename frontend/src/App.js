@@ -1,6 +1,5 @@
 import "./App.css";
 import { useFormik } from "formik";
-import axios from "axios";
 
 // validation function for formik
 const validate = (values) => {
@@ -23,15 +22,11 @@ function App() {
 
     // onSubmit that passes values to backend api when form gets submitted
     onSubmit: (values) => {
-      axios
-        .post("http://localhost:4000/api/user-signin", values)
-        .then((res) => {
-          if (res.status === 200) {
-            window.open("https://app.virtualbooth.me/booth/1LOlM26k", "_self");
-          } else {
-            alert("Invalid credentials!!!");
-          }
-        });
+      if(values.accessCode === 'tataskytopgun2021') {
+        window.open("https://app.virtualbooth.me/booth/1LOlM26k", "_self");
+      } else {
+        alert("OOPS! You've entered wrong access code!!!")
+      }
     },
   });
 
